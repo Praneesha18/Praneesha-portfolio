@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated portrait of Bheemarasetty Praneesha</title>
+  <desc id="desc">A warm vector avatar with dark hair, glasses, pearl earrings, and crossed hands</desc>
+  <defs>
+    <linearGradient id="lavender" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2a2fa"/><stop offset="1" stop-color="#a778df"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#ffd0a7"/><stop offset="1" stop-color="#e8a277"/></linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5c3829"/><stop offset="1" stop-color="#1d1415"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f45c52"/><stop offset="1" stop-color="#c9353a"/></linearGradient>
+  </defs>
+  <style>
+    .hand-left { transform-box: fill-box; transform-origin: 80% 15%; animation: little-wave-left 2.8s ease-in-out infinite; }
+    .hand-right { transform-box: fill-box; transform-origin: 20% 15%; animation: little-wave-right 2.8s ease-in-out infinite; }
+    @keyframes little-wave-left { 0%,100% { transform: rotate(0deg) translateY(0); } 50% { transform: rotate(-2.2deg) translateY(-4px); } }
+    @keyframes little-wave-right { 0%,100% { transform: rotate(0deg) translateY(0); } 50% { transform: rotate(2.2deg) translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .hand-left,.hand-right { animation:none; } }
+  </style>
+  <circle cx="300" cy="300" r="260" fill="none" stroke="#c07be9" stroke-width="5"/>
+  <circle cx="300" cy="300" r="228" fill="url(#lavender)" stroke="#0d0817" stroke-width="15"/>
+  <circle cx="300" cy="300" r="211" fill="none" stroke="#bdc5ff" stroke-width="10"/>
+  <path d="M124 270l14 28 30 14-30 14-14 31-14-31-30-14 30-14zM470 170l11 23 24 11-24 11-11 25-11-25-25-11 25-11z" fill="#ffec83" stroke="#0d0817" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M90 505l9 19 20 9-20 9-9 21-9-21-20-9 20-9z" fill="#bd84ef"/>
+  <path d="M176 570c7-103 58-154 124-154s117 51 124 154" fill="url(#shirt)" stroke="#0d0817" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M278 421h44v58h-44z" fill="url(#skin)" stroke="#0d0817" stroke-width="8"/>
+  <path d="M170 268c0-121 50-178 130-178s130 57 130 178v123c0 41-20 70-53 86-18-17-30-35-36-57h-82c-7 22-19 40-36 57-33-16-53-45-53-86z" fill="url(#hair)" stroke="#0d0817" stroke-width="11"/>
+  <path d="M205 293c0-76 37-120 95-120s95 44 95 120v78c0 59-37 96-95 96s-95-37-95-96z" fill="url(#skin)" stroke="#0d0817" stroke-width="9"/>
+  <path d="M182 272c6-116 54-166 120-166 73 0 122 57 120 172-31-36-70-54-119-54-48 0-89 17-121 48z" fill="url(#hair)" stroke="#0d0817" stroke-width="11"/>
+  <path d="M205 260c14-72 53-119 99-119 48 0 86 41 101 108-28-28-63-43-105-41-38 1-70 17-95 52z" fill="#6d4734" opacity=".62"/>
+  <path d="M185 292c10 63 13 101 2 137m227-137c-10 63-13 101-2 137" fill="none" stroke="#0d0817" stroke-width="11" stroke-linecap="round"/>
+  <path d="M199 318c-19-10-29 8-22 29 6 19 19 26 32 20m214-49c19-10 29 8 22 29-6 19-19 26-32 20" fill="none" stroke="#0d0817" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#fffaf0" fill-opacity=".88" stroke="#e6e2df" stroke-width="7"><circle cx="258" cy="321" r="43"/><circle cx="344" cy="321" r="43"/></g>
+  <path d="M301 320h-1m-85 0-20-8m170 8 20-8" fill="none" stroke="#bfc4ca" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#3a2117"><ellipse cx="260" cy="323" rx="13" ry="17"/><ellipse cx="342" cy="323" rx="13" ry="17"/></g><g fill="white"><circle cx="256" cy="317" r="5"/><circle cx="338" cy="317" r="5"/></g>
+  <path d="M254 277c13-10 29-10 41-1m49 0c13-9 29-9 41 1" fill="none" stroke="#321d19" stroke-width="9" stroke-linecap="round"/>
+  <path d="M285 379c13 15 32 17 48 0" fill="none" stroke="#9c3652" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="204" cy="381" r="13" fill="#fff" stroke="#0d0817" stroke-width="6"/><circle cx="396" cy="381" r="13" fill="#fff" stroke="#0d0817" stroke-width="6"/>
+  <path class="hand-left" d="M170 570c4-69 18-107 51-121 28-12 55 2 82 29l-19 27c-22-10-39-21-54-18-14 3-21 25-22 83z" fill="url(#skin)" stroke="#0d0817" stroke-width="9" stroke-linejoin="round"/>
+  <path class="hand-right" d="M430 570c-4-69-18-107-51-121-28-12-55 2-82 29l19 27c22-10 39-21 54-18 14 3 21 25 22 83z" fill="url(#skin)" stroke="#0d0817" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M220 456c16 10 29 24 47 31 13 5 23 6 33 4 10 2 20 1 33-4 18-7 31-21 47-31-7 23-26 43-48 51-12 5-22 7-32 7s-20-2-32-7c-22-8-41-28-48-51z" fill="url(#skin)" stroke="#0d0817" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M245 476c13 14 27 20 43 21m-9-29c8 13 16 19 25 20m9-20c-8 13-16 19-25 20m22-12c13 14 27 20 43 21" fill="none" stroke="#a85d54" stroke-width="4" stroke-linecap="round"/>
+  <path d="M287 501h26v74h-26z" fill="#25232a"/><path d="M300 501v74" stroke="#ffc16b" stroke-width="5"/>
+</svg>
