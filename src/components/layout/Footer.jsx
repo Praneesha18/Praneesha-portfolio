@@ -1,0 +1,3 @@
+import { Code2, BriefcaseBusiness, ArrowUp } from 'lucide-react'
+import { links } from '../../data/portfolioData'
+export default function Footer(){ return <footer className="border-t border-ink/15 py-8"><div className="container flex flex-col gap-5 text-sm sm:flex-row sm:items-center sm:justify-between"><p>© {new Date().getFullYear()} Bheemarasetty Praneesha</p><div className="flex items-center gap-4"><a aria-label="GitHub" href={links.github} target="_blank" rel="noreferrer"><Code2 size={18}/></a><a aria-label="LinkedIn" href={links.linkedin} target="_blank" rel="noreferrer"><BriefcaseBusiness size={18}/></a><a className="ml-3 inline-flex items-center gap-1 font-bold hover:text-saffron" href="#top">Back to top <ArrowUp size={15}/></a></div></div></footer> }
