@@ -1,41 +1,219 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 520 520" role="img" aria-labelledby="title desc">
   <title id="title">Illustrated portrait of Bheemarasetty Praneesha</title>
-  <desc id="desc">A warm vector avatar with dark hair, glasses, pearl earrings, and crossed hands</desc>
+  <desc id="desc">A warm vector avatar with dark bobbed hair, white round glasses, pearl drop earrings, and welcoming cupped hands</desc>
   <defs>
-    <linearGradient id="lavender" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2a2fa"/><stop offset="1" stop-color="#a778df"/></linearGradient>
-    <linearGradient id="skin" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#ffd0a7"/><stop offset="1" stop-color="#e8a277"/></linearGradient>
-    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5c3829"/><stop offset="1" stop-color="#1d1415"/></linearGradient>
-    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f45c52"/><stop offset="1" stop-color="#c9353a"/></linearGradient>
+    <!-- Gradients for subtle depth -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#241738"/>
+      <stop offset="50%" stopColor="#170f26"/>
+      <stop offset="100%" stopColor="#0d0817"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stopColor="#fed2b0"/>
+      <stop offset="60%" stopColor="#f3b890"/>
+      <stop offset="100%" stopColor="#dc9469"/>
+    </linearGradient>
+    <linearGradient id="skinShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#d9895c"/>
+      <stop offset="100%" stopColor="#be6f43"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stopColor="#553327"/>
+      <stop offset="40%" stopColor="#3c2218"/>
+      <stop offset="100%" stopColor="#1a0f0b"/>
+    </linearGradient>
+    <linearGradient id="hairHighlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stopColor="#5a382c" stop-opacity="0"/>
+      <stop offset="50%" stopColor="#7a4e3d" stop-opacity="0.6"/>
+      <stop offset="100%" stopColor="#5a382c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#f85747"/>
+      <stop offset="100%" stopColor="#d4362b"/>
+    </linearGradient>
+    <linearGradient id="rainbowRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#38bdf8"/>
+      <stop offset="35%" stopColor="#c084fc"/>
+      <stop offset="70%" stopColor="#f472b6"/>
+      <stop offset="100%" stopColor="#fbbf24"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
+
   <style>
-    .hand-left { transform-box: fill-box; transform-origin: 80% 15%; animation: little-wave-left 2.8s ease-in-out infinite; }
-    .hand-right { transform-box: fill-box; transform-origin: 20% 15%; animation: little-wave-right 2.8s ease-in-out infinite; }
-    @keyframes little-wave-left { 0%,100% { transform: rotate(0deg) translateY(0); } 50% { transform: rotate(-2.2deg) translateY(-4px); } }
-    @keyframes little-wave-right { 0%,100% { transform: rotate(0deg) translateY(0); } 50% { transform: rotate(2.2deg) translateY(-4px); } }
-    @media (prefers-reduced-motion: reduce) { .hand-left,.hand-right { animation:none; } }
+    .avatar-hands {
+      animation: gentle-breath 4s ease-in-out infinite;
+      transform-origin: 300px 450px;
+    }
+    @keyframes gentle-breath {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .avatar-hands { animation: none; }
+    }
   </style>
-  <circle cx="300" cy="300" r="260" fill="none" stroke="#c07be9" stroke-width="5"/>
-  <circle cx="300" cy="300" r="228" fill="url(#lavender)" stroke="#0d0817" stroke-width="15"/>
-  <circle cx="300" cy="300" r="211" fill="none" stroke="#bdc5ff" stroke-width="10"/>
-  <path d="M124 270l14 28 30 14-30 14-14 31-14-31-30-14 30-14zM470 170l11 23 24 11-24 11-11 25-11-25-25-11 25-11z" fill="#ffec83" stroke="#0d0817" stroke-width="7" stroke-linejoin="round"/>
-  <path d="M90 505l9 19 20 9-20 9-9 21-9-21-20-9 20-9z" fill="#bd84ef"/>
-  <path d="M176 570c7-103 58-154 124-154s117 51 124 154" fill="url(#shirt)" stroke="#0d0817" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M278 421h44v58h-44z" fill="url(#skin)" stroke="#0d0817" stroke-width="8"/>
-  <path d="M170 268c0-121 50-178 130-178s130 57 130 178v123c0 41-20 70-53 86-18-17-30-35-36-57h-82c-7 22-19 40-36 57-33-16-53-45-53-86z" fill="url(#hair)" stroke="#0d0817" stroke-width="11"/>
-  <path d="M205 293c0-76 37-120 95-120s95 44 95 120v78c0 59-37 96-95 96s-95-37-95-96z" fill="url(#skin)" stroke="#0d0817" stroke-width="9"/>
-  <path d="M182 272c6-116 54-166 120-166 73 0 122 57 120 172-31-36-70-54-119-54-48 0-89 17-121 48z" fill="url(#hair)" stroke="#0d0817" stroke-width="11"/>
-  <path d="M205 260c14-72 53-119 99-119 48 0 86 41 101 108-28-28-63-43-105-41-38 1-70 17-95 52z" fill="#6d4734" opacity=".62"/>
-  <path d="M185 292c10 63 13 101 2 137m227-137c-10 63-13 101-2 137" fill="none" stroke="#0d0817" stroke-width="11" stroke-linecap="round"/>
-  <path d="M199 318c-19-10-29 8-22 29 6 19 19 26 32 20m214-49c19-10 29 8 22 29-6 19-19 26-32 20" fill="none" stroke="#0d0817" stroke-width="8" stroke-linecap="round"/>
-  <g fill="#fffaf0" fill-opacity=".88" stroke="#e6e2df" stroke-width="7"><circle cx="258" cy="321" r="43"/><circle cx="344" cy="321" r="43"/></g>
-  <path d="M301 320h-1m-85 0-20-8m170 8 20-8" fill="none" stroke="#bfc4ca" stroke-width="8" stroke-linecap="round"/>
-  <g fill="#3a2117"><ellipse cx="260" cy="323" rx="13" ry="17"/><ellipse cx="342" cy="323" rx="13" ry="17"/></g><g fill="white"><circle cx="256" cy="317" r="5"/><circle cx="338" cy="317" r="5"/></g>
-  <path d="M254 277c13-10 29-10 41-1m49 0c13-9 29-9 41 1" fill="none" stroke="#321d19" stroke-width="9" stroke-linecap="round"/>
-  <path d="M285 379c13 15 32 17 48 0" fill="none" stroke="#9c3652" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="204" cy="381" r="13" fill="#fff" stroke="#0d0817" stroke-width="6"/><circle cx="396" cy="381" r="13" fill="#fff" stroke="#0d0817" stroke-width="6"/>
-  <path class="hand-left" d="M170 570c4-69 18-107 51-121 28-12 55 2 82 29l-19 27c-22-10-39-21-54-18-14 3-21 25-22 83z" fill="url(#skin)" stroke="#0d0817" stroke-width="9" stroke-linejoin="round"/>
-  <path class="hand-right" d="M430 570c-4-69-18-107-51-121-28-12-55 2-82 29l19 27c22-10 39-21 54-18 14 3 21 25 22 83z" fill="url(#skin)" stroke="#0d0817" stroke-width="9" stroke-linejoin="round"/>
-  <path d="M220 456c16 10 29 24 47 31 13 5 23 6 33 4 10 2 20 1 33-4 18-7 31-21 47-31-7 23-26 43-48 51-12 5-22 7-32 7s-20-2-32-7c-22-8-41-28-48-51z" fill="url(#skin)" stroke="#0d0817" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M245 476c13 14 27 20 43 21m-9-29c8 13 16 19 25 20m9-20c-8 13-16 19-25 20m22-12c13 14 27 20 43 21" fill="none" stroke="#a85d54" stroke-width="4" stroke-linecap="round"/>
-  <path d="M287 501h26v74h-26z" fill="#25232a"/><path d="M300 501v74" stroke="#ffc16b" stroke-width="5"/>
+
+  <!-- Circular Outer Badges & Frames -->
+  <circle cx="300" cy="300" r="248" fill="url(#rainbowRing)" stroke="#a78bfa" stroke-width="4" filter="url(#softGlow)" opacity="0.85"/>
+  <circle cx="300" cy="300" r="236" fill="url(#bgGrad)" stroke="#1a112c" stroke-width="6"/>
+  <circle cx="300" cy="300" r="226" fill="none" stroke="#e0c3fc" stroke-width="2" stroke-dasharray="8 6" opacity="0.4"/>
+
+  <!-- Background sparkle accents -->
+  <path d="M125 180l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#fde047" opacity="0.8"/>
+  <path d="M470 210l7 16 16 7-16 7-7 16-7-16-16-7 16-7z" fill="#f472b6" opacity="0.8"/>
+  <circle cx="450" cy="140" r="3" fill="#38bdf8"/>
+  <circle cx="150" cy="420" r="4" fill="#a78bfa"/>
+
+  <!-- Back Hair (Behind Neck & Shoulders) -->
+  <path d="M185 240 C170 330, 185 410, 225 435 C250 445, 350 445, 375 435 C415 410, 430 330, 415 240 Z" fill="url(#hair)"/>
+
+  <!-- Torso & Top (Red/Coral Sleeveless Top with Pinstripes) -->
+  <g id="torso">
+    <!-- Body Base -->
+    <path d="M190 535 C190 450, 220 425, 260 420 L340 420 C380 425, 410 450, 410 535 Z" fill="url(#shirt)"/>
+    
+    <!-- Scoop Neck Cutout -->
+    <path d="M260 420 C260 455, 340 455, 340 420 Z" fill="url(#skin)"/>
+
+    <!-- Vertical Dark Stripes on Shirt -->
+    <path d="M285 448 L285 535" stroke="#2b2326" stroke-width="5" stroke-linecap="round"/>
+    <path d="M300 452 L300 535" stroke="#2b2326" stroke-width="6" stroke-linecap="round"/>
+    <path d="M315 448 L315 535" stroke="#2b2326" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Neck & Shadow -->
+  <path d="M272 360 L272 430 C285 436, 315 436, 328 430 L328 360 Z" fill="url(#skin)"/>
+  <path d="M272 360 C285 385, 315 385, 328 360 C320 375, 280 375, 272 360 Z" fill="url(#skinShadow)" opacity="0.6"/>
+
+  <!-- Ears & Pearl Drop Earrings -->
+  <!-- Left Ear -->
+  <path d="M208 285 C195 285, 195 325, 210 325 Z" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+  <!-- Left Pearl Earring -->
+  <ellipse cx="202" cy="335" rx="2" ry="6" fill="#e2e8f0"/>
+  <circle cx="202" cy="342" r="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <circle cx="200" cy="340" r="2.2" fill="#ffffff"/>
+
+  <!-- Right Ear -->
+  <path d="M392 285 C405 285, 405 325, 390 325 Z" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+  <!-- Right Pearl Earring -->
+  <ellipse cx="398" cy="335" rx="2" ry="6" fill="#e2e8f0"/>
+  <circle cx="398" cy="342" r="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <circle cx="396" cy="340" r="2.2" fill="#ffffff"/>
+
+  <!-- Face Shape -->
+  <path d="M212 260 C210 330, 230 380, 300 380 C370 380, 390 330, 388 260 C388 190, 370 170, 300 170 C230 170, 212 190, 212 260 Z" fill="url(#skin)"/>
+
+  <!-- Cheeks Blush -->
+  <circle cx="240" cy="320" r="14" fill="#f472b6" opacity="0.25" filter="url(#softGlow)"/>
+  <circle cx="360" cy="320" r="14" fill="#f472b6" opacity="0.25" filter="url(#softGlow)"/>
+
+  <!-- Eyebrows -->
+  <path d="M236 248 C248 240, 268 242, 276 250" fill="none" stroke="#2b1912" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M324 250 C332 242, 352 240, 364 248" fill="none" stroke="#2b1912" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Eyes (Warm, Cheerful, Dark Brown) -->
+  <!-- Left Eye -->
+  <ellipse cx="258" cy="275" rx="14" ry="16" fill="#ffffff"/>
+  <ellipse cx="259" cy="275" rx="10" ry="12" fill="#2e1911"/>
+  <circle cx="262" cy="272" r="4" fill="#ffffff"/>
+  <circle cx="256" cy="278" r="1.8" fill="#ffffff"/>
+  <path d="M244 269 C252 263, 266 263, 274 270" fill="none" stroke="#1f110c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="342" cy="275" rx="14" ry="16" fill="#ffffff"/>
+  <ellipse cx="341" cy="275" rx="10" ry="12" fill="#2e1911"/>
+  <circle cx="344" cy="272" r="4" fill="#ffffff"/>
+  <circle cx="338" cy="278" r="1.8" fill="#ffffff"/>
+  <path d="M326 270 C334 263, 348 263, 356 269" fill="none" stroke="#1f110c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M296 295 C298 310, 292 318, 300 320 C306 320, 304 314, 304 310" fill="none" stroke="#cb7d55" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Smiling Lips (Mauve/Pink with White Teeth Smile) -->
+  <path d="M272 338 C285 358, 315 358, 328 338 Z" fill="#9f2d4e"/>
+  <path d="M276 340 C288 348, 312 348, 324 340 Z" fill="#ffffff"/>
+  <path d="M268 336 C284 354, 316 354, 332 336" fill="none" stroke="#831d3b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- White / Silver Circular Glasses (Accurate to photo) -->
+  <g id="glasses">
+    <!-- Left Frame -->
+    <circle cx="258" cy="274" r="32" fill="none" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="258" cy="274" r="31" fill="#ffffff" fill-opacity="0.08"/>
+    <!-- Glass Glint -->
+    <path d="M240 258 C248 252, 264 252, 272 258" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right Frame -->
+    <circle cx="342" cy="274" r="32" fill="none" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="342" cy="274" r="31" fill="#ffffff" fill-opacity="0.08"/>
+    <!-- Glass Glint -->
+    <path d="M324 258 C332 252, 348 252, 356 258" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Bridge & Side Hinges -->
+    <path d="M290 270 C296 266, 304 266, 310 270" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M226 273 L208 277" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M374 273 L392 277" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Front Hair: Bob with Side Part framing face (From reference) -->
+  <g id="hairFront">
+    <!-- Left Bob Swoop -->
+    <path d="M300 170 C240 170, 198 215, 196 285 C194 335, 210 380, 235 390 C220 360, 212 320, 216 280 C218 240, 245 190, 300 185 Z" fill="url(#hair)"/>
+    <!-- Right Bob Swoop -->
+    <path d="M300 170 C360 170, 402 215, 404 285 C406 335, 390 380, 365 390 C380 360, 388 320, 384 280 C382 240, 355 190, 300 185 Z" fill="url(#hair)"/>
+    <!-- Bangs / Forehead Curve -->
+    <path d="M235 210 C270 190, 320 185, 360 215 C335 200, 280 200, 235 210 Z" fill="#2b1811"/>
+    <!-- Soft shine on hair -->
+    <path d="M230 200 C270 182, 330 182, 370 200" stroke="url(#hairHighlight)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- WELCOMING CUPPED-HANDS GESTURE (Exact match to user reference photo) -->
+  <g class="avatar-hands" id="cuppedHands">
+    <!-- Left Forearm & Arm -->
+    <path d="M140 540 C145 480, 175 440, 220 442 C240 443, 260 450, 275 462 L260 495 C235 485, 205 490, 185 540 Z" fill="url(#skin)"/>
+
+    <!-- Right Forearm & Arm -->
+    <path d="M460 540 C455 480, 425 440, 380 442 C360 443, 340 450, 325 462 L340 495 C365 485, 395 490, 415 540 Z" fill="url(#skin)"/>
+
+    <!-- Left Cupped Hand (Palms Facing Upward & Forward) -->
+    <!-- Hand base and thumb -->
+    <path d="M195 438 C185 435, 175 442, 178 452 C182 462, 195 466, 212 468 L255 468 C275 468, 288 458, 292 448 C294 440, 285 434, 275 436 L245 438 C232 438, 212 432, 195 438 Z" fill="url(#skin)" stroke="#2b1a13" stroke-width="2.5"/>
+
+    <!-- Left Fingers Cupped Gently (Index, Middle, Ring, Pinky) -->
+    <!-- Pinky -->
+    <path d="M225 436 C225 424, 238 422, 244 430 L250 442" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Ring -->
+    <path d="M242 432 C243 420, 258 418, 264 428 L268 444" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Middle (longest) -->
+    <path d="M260 430 C262 416, 278 415, 284 426 L288 445" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Index -->
+    <path d="M278 430 C282 418, 296 418, 302 428 L302 448" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Left Thumb (pointing slightly out/up) -->
+    <path d="M182 444 C175 436, 185 426, 194 434 L208 444" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+
+    <!-- Right Cupped Hand (Palms Facing Upward & Forward) -->
+    <!-- Hand base and thumb -->
+    <path d="M405 438 C415 435, 425 442, 422 452 C418 462, 405 466, 388 468 L345 468 C325 468, 312 458, 308 448 C306 440, 315 434, 325 436 L355 438 C368 438, 388 432, 405 438 Z" fill="url(#skin)" stroke="#2b1a13" stroke-width="2.5"/>
+
+    <!-- Right Fingers Cupped Gently (Index, Middle, Ring, Pinky) -->
+    <!-- Index -->
+    <path d="M322 430 C318 418, 304 418, 298 428 L298 448" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Middle -->
+    <path d="M340 430 C338 416, 322 415, 316 426 L312 445" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Ring -->
+    <path d="M358 432 C357 420, 342 418, 336 428 L332 444" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Pinky -->
+    <path d="M375 436 C375 424, 362 422, 356 430 L350 442" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+    <!-- Right Thumb -->
+    <path d="M418 444 C425 436, 415 426, 406 434 L392 444" fill="url(#skin)" stroke="#2b1a13" stroke-width="2"/>
+
+    <!-- Soft palm highlights indicating upward-facing cupped hollow -->
+    <ellipse cx="250" cy="450" rx="16" ry="6" fill="#ffdcc2" opacity="0.6"/>
+    <ellipse cx="350" cy="450" rx="16" ry="6" fill="#ffdcc2" opacity="0.6"/>
+    <!-- Gentle shadow between hands -->
+    <path d="M292 452 C298 450, 302 450, 308 452" stroke="#cb7d55" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
 </svg>
